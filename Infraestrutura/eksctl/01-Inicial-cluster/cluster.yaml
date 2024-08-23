@@ -3,7 +3,7 @@ kind: ClusterConfig
 
 metadata:
   name: eks-acg
-  region: us-east-1
+  region: us-west-2
   version: "1.27"
 
 vpc:
@@ -17,4 +17,4 @@ nodeGroups:
     privateNetworking: true
     volumeSize: 30
 
-availabilityZones: ["us-east-1a", "us-east-1b", "us-east-1c"] # This is required since in us-east-1 only 2 subnets are created by default (https://eksctl.io/usage/vpc-networking/)
+availabilityZones: ["us-west-2a", "us-west-2b", "us-west-2c"] # This is required since in us-east-1 only 2 subnets are created by default (https://eksctl.io/usage/vpc-networking/)
